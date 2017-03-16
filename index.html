@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Linen Green</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano">
+</div>
+
+<div id="sceneList">
+
+  <ul class="scenes">
+
+    <div class="logoScene">
+      <a href=""><img src="img/logo.png" /></a>
+    </div>
+
+    <button class="accordion"><img src="img/map.png" />map</button>
+    <div class="map">
+      <img src="img/plan.png" alt="" usemap="#Map" />
+      <map name="Map" id="Map">
+        <area alt="" title="The Dye House" href="#" class="scene" data-id="map-0-linengreen" shape="circle" coords="275,135,20" />
+        <area alt="" title="The Workshop" href="#" shape="circle" coords="201,58,20" />
+        <area alt="" title="The Warehouse" href="#" shape="circle" coords="125,99,20" />
+        <area alt="" title="The Frame House" href="#" shape="circle" coords="83,47,20" />
+      </map>
+    </div>
+
+    <button class="accordion"><img src="img/home.png" />Shopping Centre</button>
+    <div class="panel">
+      <a href="#" class="scene" data-id="0-linengreen">
+        <li class="text"><img src="img/right.png" />The Dye House</li>
+      </a>
+    </div>
+
+    <button class="accordion"><img src="img/shop.png" />Shops</button>
+    <div class="panel">
+      <a href="#" class="scene" data-id="2-newsagent">
+        <li class="text"><img src="img/right.png" />Newsagent</li>
+      </a>
+    </div>
+
+    <button class="accordion"><img src="img/food.png" />Food</button>
+    <div class="panel">
+      <a href="#" class="scene" data-id="3-restaurant">
+        <li class="text"><img src="img/right.png" />Restaurant</li>
+      </a>
+    </div>
+
+    <button class="accordion"><img src="img/office.png" />Services</button>
+    <div class="panel">
+      <a href="#" class="scene" data-id="1-hairdresser">
+        <li class="text"><img src="img/right.png" />Hairdresser</li>
+      </a>
+    </div>
+
+    <button class="accordion"><img src="img/info.png" />More Info</button>
+    <div class="panel">
+      <h1>Address</h1>
+      <p>Linen Green
+      <br>Main Rd
+      <br>Moygashel
+      <br>Dungannon
+      <br>BT71 7HB</p>
+      <h1>Phone</h1>
+      <p>+(44) 28 8772 6684</p>
+      <h1>Email</h1>
+      <p>info@thelinengreen.co.uk</p>
+    </div>
+    <a href="https://www.facebook.com/" target="_blank" class="sceneButton sceneButton-1">
+      <img class="icon" src="img/facebook.png">
+    </a>
+
+    <a href="" target="_blank" class="sceneButton sceneButton-2">
+      <img class="icon" src="img/email.png">
+    </a>
+
+    <a href="" target="_blank" class="sceneButton sceneButton-3">
+      <img class="icon" src="img/phone.png">
+    </a>
+
+    <a href="https://powerbi.microsoft.com/en-us/" target="_blank" class="sceneButton sceneButton-4">
+      <img class="icon" src="img/chart.png">
+    </a>
+  </ul>
+</div>
+
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="#" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="#" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="#" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="#" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="#" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="#" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="#" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="#" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="#" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/es5-shim.js"></script>
+<script src="vendor/eventShim.js"></script>
+<script src="vendor/classList.js"></script>
+<script src="vendor/requestAnimationFrame.js" ></script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
